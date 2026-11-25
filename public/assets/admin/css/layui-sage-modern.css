@@ -1,0 +1,1022 @@
+/* ==========================================================================
+   ShopMate Admin — 护眼青灰 (Sage Teal) Layui 2.13+ 现代重设计主题
+   融合 EasyUI 高密度效率 + Layui 轻量组件 + 现代 2026 企业后台美学
+   ========================================================================== */
+
+:root,
+[data-theme="sage"] {
+  --sage-primary: #0f766e;
+  --sage-primary-hover: #115e59;
+  --sage-primary-soft: #f0fdfa;
+  --sage-primary-active: #ccfbf1;
+  --sage-primary-ring: rgba(15, 118, 110, 0.14);
+  --sage-header-bg: #ffffff;
+  --sage-header-text: #134e4a;
+  --sage-header-muted: #64827e;
+  --sage-header-border: #d9e4e2;
+  --sage-header-chip-bg: #f0fdfa;
+  --sage-header-chip-text: #0f766e;
+  --sage-header-chip-border: #ccebe6;
+  --sage-header-hover: #e7f0ee;
+  --sage-side-bg: #f5f9f8;
+  --sage-side-text: #2c4744;
+  --sage-side-muted: #64827e;
+  --sage-side-hover: #e7f0ee;
+  --sage-side-active-bg: #ccfbf1;
+  --sage-side-active-text: #0f766e;
+  --sage-side-border: #d9e4e2;
+  --sage-border: #d9e4e2;
+  --sage-border-light: #e7efed;
+  --sage-canvas: #eff4f3;
+  --sage-table-head: #f4f8f7;
+  --sage-table-foot: #f7faf9;
+  --sage-text: #1e293b;
+  --sage-text-muted: #64748b;
+  --sage-radius: 6px;
+}
+
+/* 主题 2：极简企业蓝 (Classic EasyUI 升级版) */
+html[data-theme="blue"] {
+  --sage-primary: #2563eb;
+  --sage-primary-hover: #1d4ed8;
+  --sage-primary-soft: #eff6ff;
+  --sage-primary-active: #dbeafe;
+  --sage-primary-ring: rgba(37, 99, 235, 0.14);
+  --sage-header-bg: #1e40af;
+  --sage-header-text: #ffffff;
+  --sage-header-muted: #bfdbfe;
+  --sage-header-border: #1e3a8a;
+  --sage-header-chip-bg: rgba(255, 255, 255, 0.16);
+  --sage-header-chip-text: #ffffff;
+  --sage-header-chip-border: rgba(255, 255, 255, 0.22);
+  --sage-header-hover: rgba(255, 255, 255, 0.14);
+  --sage-side-bg: #f8fafc;
+  --sage-side-text: #334155;
+  --sage-side-muted: #64748b;
+  --sage-side-hover: #eef2f7;
+  --sage-side-active-bg: #dbeafe;
+  --sage-side-active-text: #1d4ed8;
+  --sage-side-border: #e2e8f0;
+  --sage-border: #e2e8f0;
+  --sage-border-light: #eef2f6;
+  --sage-canvas: #f1f5f9;
+  --sage-table-head: #f8fafc;
+  --sage-table-foot: #f8fafc;
+  --sage-text: #1e293b;
+  --sage-text-muted: #64748b;
+  --sage-radius: 6px;
+}
+
+/* 主题 3：深炭商务 Pro (深色侧栏 + 纯白顶栏) */
+html[data-theme="slate"] {
+  --sage-primary: #2563eb;
+  --sage-primary-hover: #1d4ed8;
+  --sage-primary-soft: #eff6ff;
+  --sage-primary-active: #dbeafe;
+  --sage-primary-ring: rgba(37, 99, 235, 0.14);
+  --sage-header-bg: #ffffff;
+  --sage-header-text: #0f172a;
+  --sage-header-muted: #64748b;
+  --sage-header-border: #e2e8f0;
+  --sage-header-chip-bg: #eff6ff;
+  --sage-header-chip-text: #2563eb;
+  --sage-header-chip-border: #bfdbfe;
+  --sage-header-hover: #f1f5f9;
+  --sage-side-bg: #0f172a;
+  --sage-side-text: #cbd5e1;
+  --sage-side-muted: #64748b;
+  --sage-side-hover: #1e293b;
+  --sage-side-active-bg: #2563eb;
+  --sage-side-active-text: #ffffff;
+  --sage-side-border: #1e293b;
+  --sage-border: #e2e8f0;
+  --sage-border-light: #eef2f6;
+  --sage-canvas: #f1f5f9;
+  --sage-table-head: #f8fafc;
+  --sage-table-foot: #f8fafc;
+  --sage-text: #0f172a;
+  --sage-text-muted: #64748b;
+  --sage-radius: 6px;
+}
+
+/* 主题 4：现代桌面 Fluent (纯白侧栏 + 靛蓝微拟物) */
+html[data-theme="fluent"] {
+  --sage-primary: #4f46e5;
+  --sage-primary-hover: #4338ca;
+  --sage-primary-soft: #eef2ff;
+  --sage-primary-active: #e0e7ff;
+  --sage-primary-ring: rgba(79, 70, 229, 0.14);
+  --sage-header-bg: #ffffff;
+  --sage-header-text: #111827;
+  --sage-header-muted: #6b7280;
+  --sage-header-border: #e5e7eb;
+  --sage-header-chip-bg: #eef2ff;
+  --sage-header-chip-text: #4f46e5;
+  --sage-header-chip-border: #c7d2fe;
+  --sage-header-hover: #f3f4f6;
+  --sage-side-bg: #ffffff;
+  --sage-side-text: #374151;
+  --sage-side-muted: #9ca3af;
+  --sage-side-hover: #f3f4f6;
+  --sage-side-active-bg: #eef2ff;
+  --sage-side-active-text: #4338ca;
+  --sage-side-border: #e5e7eb;
+  --sage-border: #e5e7eb;
+  --sage-border-light: #f3f4f6;
+  --sage-canvas: #f3f4f6;
+  --sage-table-head: #f9fafb;
+  --sage-table-foot: #f9fafb;
+  --sage-text: #111827;
+  --sage-text-muted: #6b7280;
+  --sage-radius: 8px;
+}
+
+/* 主题 5：森林翠绿 (深墨绿侧栏 + 翠绿主色) */
+html[data-theme="emerald"] {
+  --sage-primary: #059669;
+  --sage-primary-hover: #047857;
+  --sage-primary-soft: #ecfdf5;
+  --sage-primary-active: #d1fae5;
+  --sage-primary-ring: rgba(5, 150, 105, 0.14);
+  --sage-header-bg: #ffffff;
+  --sage-header-text: #064e3b;
+  --sage-header-muted: #64748b;
+  --sage-header-border: #d9e7e2;
+  --sage-header-chip-bg: #ecfdf5;
+  --sage-header-chip-text: #059669;
+  --sage-header-chip-border: #a7f3d0;
+  --sage-header-hover: #ecfdf5;
+  --sage-side-bg: #064e3b;
+  --sage-side-text: #d1fae5;
+  --sage-side-muted: #6ee7b7;
+  --sage-side-hover: #065f46;
+  --sage-side-active-bg: #10b981;
+  --sage-side-active-text: #ffffff;
+  --sage-side-border: #064e3b;
+  --sage-border: #d9e7e2;
+  --sage-border-light: #eaf2ef;
+  --sage-canvas: #f1f6f4;
+  --sage-table-head: #f4f9f7;
+  --sage-table-foot: #f7faf8;
+  --sage-text: #0f172a;
+  --sage-text-muted: #64748b;
+  --sage-radius: 6px;
+}
+
+/* 主题 6：深海科技蓝 (深海蓝侧栏 + 湖蓝主色) */
+html[data-theme="navy"] {
+  --sage-primary: #0284c7;
+  --sage-primary-hover: #0369a1;
+  --sage-primary-soft: #f0f9ff;
+  --sage-primary-active: #e0f2fe;
+  --sage-primary-ring: rgba(2, 132, 199, 0.15);
+  --sage-header-bg: #ffffff;
+  --sage-header-text: #0c4a6e;
+  --sage-header-muted: #64748b;
+  --sage-header-border: #dce7ef;
+  --sage-header-chip-bg: #f0f9ff;
+  --sage-header-chip-text: #0284c7;
+  --sage-header-chip-border: #bae6fd;
+  --sage-header-hover: #f0f9ff;
+  --sage-side-bg: #0c233c;
+  --sage-side-text: #cbd5e1;
+  --sage-side-muted: #7dd3fc;
+  --sage-side-hover: #143456;
+  --sage-side-active-bg: #0284c7;
+  --sage-side-active-text: #ffffff;
+  --sage-side-border: #0c233c;
+  --sage-border: #dce7ef;
+  --sage-border-light: #edf3f8;
+  --sage-canvas: #f1f5f9;
+  --sage-table-head: #f6f9fc;
+  --sage-table-foot: #f8fafc;
+  --sage-text: #0f172a;
+  --sage-text-muted: #64748b;
+  --sage-radius: 6px;
+}
+
+/* 主题 7：暖阳琥珀 (暖白护眼画布 + 沉稳琥珀橙) */
+html[data-theme="amber"] {
+  --sage-primary: #d97706;
+  --sage-primary-hover: #b45309;
+  --sage-primary-soft: #fffbeb;
+  --sage-primary-active: #fef3c7;
+  --sage-primary-ring: rgba(217, 119, 6, 0.15);
+  --sage-header-bg: #ffffff;
+  --sage-header-text: #78350f;
+  --sage-header-muted: #78716c;
+  --sage-header-border: #e7e2da;
+  --sage-header-chip-bg: #fffbeb;
+  --sage-header-chip-text: #b45309;
+  --sage-header-chip-border: #fde68a;
+  --sage-header-hover: #fef3c7;
+  --sage-side-bg: #faf7f2;
+  --sage-side-text: #44403c;
+  --sage-side-muted: #8c8279;
+  --sage-side-hover: #f2ece2;
+  --sage-side-active-bg: #fef3c7;
+  --sage-side-active-text: #b45309;
+  --sage-side-border: #e7e2da;
+  --sage-border: #e7e2da;
+  --sage-border-light: #f2eee8;
+  --sage-canvas: #f7f4ef;
+  --sage-table-head: #faf8f4;
+  --sage-table-foot: #faf8f4;
+  --sage-text: #292524;
+  --sage-text-muted: #78716c;
+  --sage-radius: 6px;
+}
+
+/* 主题 8：绯红玫瑰 (深梅灰侧栏 + 玫瑰红主色) */
+html[data-theme="rose"] {
+  --sage-primary: #e11d48;
+  --sage-primary-hover: #be123c;
+  --sage-primary-soft: #fff1f2;
+  --sage-primary-active: #ffe4e6;
+  --sage-primary-ring: rgba(225, 29, 72, 0.14);
+  --sage-header-bg: #ffffff;
+  --sage-header-text: #881337;
+  --sage-header-muted: #6b7280;
+  --sage-header-border: #ebdadd;
+  --sage-header-chip-bg: #fff1f2;
+  --sage-header-chip-text: #e11d48;
+  --sage-header-chip-border: #fecdd3;
+  --sage-header-hover: #fff1f2;
+  --sage-side-bg: #1f1622;
+  --sage-side-text: #e2d9e6;
+  --sage-side-muted: #a18fa8;
+  --sage-side-hover: #302235;
+  --sage-side-active-bg: #e11d48;
+  --sage-side-active-text: #ffffff;
+  --sage-side-border: #1f1622;
+  --sage-border: #e5e0e4;
+  --sage-border-light: #f3eff2;
+  --sage-canvas: #f6f4f6;
+  --sage-table-head: #faf8fa;
+  --sage-table-foot: #faf8fa;
+  --sage-text: #1f2937;
+  --sage-text-muted: #6b7280;
+  --sage-radius: 6px;
+}
+
+/* 主题 9：极光紫韵 (深靛紫顶栏 + 浅紫灰侧栏) */
+html[data-theme="violet"] {
+  --sage-primary: #7c3aed;
+  --sage-primary-hover: #6d28d9;
+  --sage-primary-soft: #f5f3ff;
+  --sage-primary-active: #ede9fe;
+  --sage-primary-ring: rgba(124, 58, 237, 0.15);
+  --sage-header-bg: #4c1d95;
+  --sage-header-text: #ffffff;
+  --sage-header-muted: #ddd6fe;
+  --sage-header-border: #3b0764;
+  --sage-header-chip-bg: rgba(255, 255, 255, 0.16);
+  --sage-header-chip-text: #ffffff;
+  --sage-header-chip-border: rgba(255, 255, 255, 0.24);
+  --sage-header-hover: rgba(255, 255, 255, 0.14);
+  --sage-side-bg: #faf8ff;
+  --sage-side-text: #3b3552;
+  --sage-side-muted: #7c7499;
+  --sage-side-hover: #f1ecfe;
+  --sage-side-active-bg: #ede9fe;
+  --sage-side-active-text: #6d28d9;
+  --sage-side-border: #e5e0f2;
+  --sage-border: #e5e0f2;
+  --sage-border-light: #f1eef9;
+  --sage-canvas: #f5f3fa;
+  --sage-table-head: #faf8ff;
+  --sage-table-foot: #faf8ff;
+  --sage-text: #1e1b2e;
+  --sage-text-muted: #6b6484;
+  --sage-radius: 7px;
+}
+
+/* 主题 10：极简石墨黑 (黑白灰高定极简风) */
+html[data-theme="graphite"] {
+  --sage-primary: #18181b;
+  --sage-primary-hover: #27272a;
+  --sage-primary-soft: #f4f4f5;
+  --sage-primary-active: #e4e4e7;
+  --sage-primary-ring: rgba(24, 24, 27, 0.12);
+  --sage-header-bg: #ffffff;
+  --sage-header-text: #18181b;
+  --sage-header-muted: #71717a;
+  --sage-header-border: #e4e4e7;
+  --sage-header-chip-bg: #f4f4f5;
+  --sage-header-chip-text: #18181b;
+  --sage-header-chip-border: #d4d4d8;
+  --sage-header-hover: #f4f4f5;
+  --sage-side-bg: #18181b;
+  --sage-side-text: #d4d4d8;
+  --sage-side-muted: #71717a;
+  --sage-side-hover: #27272a;
+  --sage-side-active-bg: #ffffff;
+  --sage-side-active-text: #18181b;
+  --sage-side-border: #27272a;
+  --sage-border: #e4e4e7;
+  --sage-border-light: #f0f0f2;
+  --sage-canvas: #f4f4f5;
+  --sage-table-head: #fafafa;
+  --sage-table-foot: #fafafa;
+  --sage-text: #18181b;
+  --sage-text-muted: #71717a;
+  --sage-radius: 5px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  color: var(--sage-text);
+  background: var(--sage-canvas);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 自定义细滚动条 */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c5d6d3; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #9db7b2; }
+
+/* ================= 后台主框架布局 ================= */
+.sage-shell {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sage-header {
+  height: 50px;
+  background: var(--sage-header-bg);
+  color: var(--sage-header-text);
+  border-bottom: 1px solid var(--sage-header-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  flex-shrink: 0;
+  z-index: 20;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sage-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sage-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 196px;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--sage-header-text);
+  text-decoration: none;
+}
+
+.sage-brand-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: var(--sage-primary);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+  box-shadow: 0 2px 5px rgba(15, 118, 110, 0.22);
+}
+
+.sage-brand-tag {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--sage-header-chip-bg);
+  color: var(--sage-header-chip-text);
+  border: 1px solid var(--sage-header-chip-border);
+}
+
+.sage-icon-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--sage-header-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.sage-icon-btn:hover {
+  background: var(--sage-header-hover);
+  color: var(--sage-header-text);
+}
+
+.sage-crumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--sage-header-muted);
+}
+.sage-crumb strong {
+  color: var(--sage-header-text);
+  font-weight: 600;
+}
+
+.sage-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sage-user-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px 4px 5px;
+  border-radius: 999px;
+  border: 1px solid var(--sage-header-chip-border);
+  background: var(--sage-header-chip-bg);
+  color: var(--sage-header-text);
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.sage-user-trigger:hover {
+  border-color: var(--sage-primary);
+}
+.sage-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--sage-primary);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.sage-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* 左侧菜单栏 */
+.sage-side {
+  width: 216px;
+  background: var(--sage-side-bg);
+  border-right: 1px solid var(--sage-side-border);
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex-shrink: 0;
+  transition: width 0.2s ease, background 0.2s ease;
+  overflow-y: auto;
+}
+.sage-side.collapsed { width: 58px; padding: 12px 8px; }
+.sage-side.collapsed .sage-nav-text,
+.sage-side.collapsed .sage-side-group { display: none; }
+
+.sage-side-group {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--sage-side-muted);
+  padding: 10px 10px 4px;
+  letter-spacing: 0.4px;
+}
+
+.sage-nav-item {
+  height: 36px;
+  padding: 0 11px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--sage-side-text);
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s, color 0.15s;
+  text-decoration: none;
+}
+.sage-nav-item:hover {
+  background: var(--sage-side-hover);
+  color: var(--sage-side-active-text);
+}
+.sage-nav-item.active {
+  background: var(--sage-side-active-bg);
+  color: var(--sage-side-active-text);
+  font-weight: 600;
+}
+.sage-nav-item .layui-icon {
+  font-size: 15px;
+  width: 18px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* 右侧多标签页工作区 */
+.sage-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--sage-canvas);
+}
+
+.sage-tab-bar {
+  height: 38px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--sage-border);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 10px;
+  flex-shrink: 0;
+}
+
+.sage-tabs {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  overflow-x: auto;
+  flex: 1;
+}
+
+.sage-tab {
+  height: 31px;
+  padding: 0 10px 0 12px;
+  border-radius: 6px 6px 0 0;
+  border: 1px solid transparent;
+  border-bottom: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12.5px;
+  color: var(--sage-text-muted);
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  top: 1px;
+  transition: all 0.15s;
+}
+.sage-tab:hover { background: var(--sage-table-head); color: var(--sage-text); }
+.sage-tab.active {
+  background: var(--sage-canvas);
+  color: var(--sage-primary);
+  border-color: var(--sage-border);
+  font-weight: 600;
+}
+.sage-tab-close {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #94a3b8;
+}
+.sage-tab-close:hover { background: #dce7e5; color: #dc2626; }
+
+.sage-tab-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 5px;
+  flex-shrink: 0;
+}
+
+.sage-iframe-wrap {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+.sage-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: none;
+  background: var(--sage-canvas);
+}
+.sage-iframe.active { display: block; }
+
+/* ================= 子页面通用卡片与紧凑容器 ================= */
+.sage-page {
+  padding: 12px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sage-card {
+  background: #ffffff;
+  border: 1px solid var(--sage-border);
+  border-radius: var(--sage-radius);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.sage-filter-card {
+  padding: 10px 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.sage-table-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sage-toolbar {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--sage-border);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #ffffff;
+}
+.sage-toolbar-left, .sage-toolbar-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.sage-divider {
+  width: 1px;
+  height: 16px;
+  background: var(--sage-border);
+  margin: 0 2px;
+}
+
+/* ================= 上下主从分屏布局（数据字典等） ================= */
+.sage-split-page {
+  height: 100vh;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+}
+.sage-split-top {
+  flex: 1.05;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.sage-split-handle {
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: row-resize;
+  flex-shrink: 0;
+}
+.sage-split-handle::after {
+  content: "";
+  width: 48px;
+  height: 4px;
+  border-radius: 99px;
+  background: #bfd0cd;
+  transition: background 0.15s;
+}
+.sage-split-handle:hover::after { background: var(--sage-primary); }
+.sage-split-bottom {
+  flex: 1;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ================= 深度覆写 Layui 原生组件样式 ================= */
+
+/* 1. 按钮 */
+.layui-btn {
+  height: 30px;
+  line-height: 28px;
+  padding: 0 13px;
+  font-size: 12.5px;
+  border-radius: 5px;
+  background-color: var(--sage-primary);
+  border: 1px solid var(--sage-primary);
+  transition: all 0.15s;
+}
+.layui-btn:hover {
+  opacity: 1;
+  background-color: var(--sage-primary-hover);
+  border-color: var(--sage-primary-hover);
+}
+.layui-btn-primary {
+  background-color: #ffffff;
+  border-color: #cbd5e1;
+  color: #334155;
+}
+.layui-btn-primary:hover {
+  border-color: var(--sage-primary);
+  color: var(--sage-primary);
+  background-color: var(--sage-primary-soft);
+}
+.layui-btn-danger {
+  background-color: #dc2626;
+  border-color: #dc2626;
+}
+.layui-btn-danger-ghost {
+  background-color: #ffffff !important;
+  border-color: #fecaca !important;
+  color: #dc2626 !important;
+}
+.layui-btn-danger-ghost:hover {
+  background-color: #fef2f2 !important;
+  border-color: #f87171 !important;
+}
+.layui-btn-xs {
+  height: 24px;
+  line-height: 22px;
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+/* 2. 表单输入框与下拉框 */
+.layui-input, .layui-select, .layui-textarea {
+  border-color: #cbd5e1;
+  border-radius: 5px;
+  font-size: 12.5px;
+  color: #1e293b;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.layui-input, .layui-select {
+  height: 32px;
+  line-height: 32px;
+}
+.sage-filter-card .layui-input,
+.sage-filter-card .layui-select {
+  height: 30px;
+  line-height: 30px;
+}
+.layui-input:focus, .layui-textarea:focus {
+  border-color: var(--sage-primary) !important;
+  box-shadow: 0 0 0 3px var(--sage-primary-ring);
+}
+.layui-form-select dl dd.layui-this {
+  background-color: var(--sage-primary) !important;
+  color: #ffffff !important;
+}
+.layui-form-select dl dd:hover {
+  background-color: var(--sage-primary-soft) !important;
+  color: var(--sage-primary) !important;
+}
+.layui-form-onswitch {
+  border-color: var(--sage-primary) !important;
+  background-color: var(--sage-primary) !important;
+}
+.layui-form-checked,
+.layui-form-checked:hover {
+  border-color: var(--sage-primary) !important;
+}
+.layui-form-checked span,
+.layui-form-checked:hover span {
+  background-color: var(--sage-primary) !important;
+}
+.layui-form-checked i,
+.layui-form-checked:hover i {
+  color: var(--sage-primary) !important;
+}
+.layui-form-checked[lay-skin=primary] i {
+  border-color: var(--sage-primary) !important;
+  background-color: var(--sage-primary) !important;
+  color: #ffffff !important;
+}
+.layui-form-checkbox[lay-skin=primary]:hover i {
+  border-color: var(--sage-primary) !important;
+}
+.layui-form-radio:hover *, .layui-form-radioed, .layui-form-radioed > i {
+  color: var(--sage-primary) !important;
+}
+.layui-menu .layui-menu-item-checked,
+.layui-menu .layui-menu-item-checked2 {
+  background-color: var(--sage-primary-soft) !important;
+  color: var(--sage-primary) !important;
+}
+.layui-menu li:hover {
+  background-color: var(--sage-primary-soft) !important;
+}
+.layui-laypage input:focus,
+.layui-laypage select:focus {
+  border-color: var(--sage-primary) !important;
+}
+.layui-laypage-btn:hover {
+  border-color: var(--sage-primary) !important;
+  color: var(--sage-primary) !important;
+}
+
+/* 3. 高密度数据表格（融合 EasyUI 1px 细网格） */
+.layui-table-view {
+  margin: 0 !important;
+  border: none !important;
+}
+.layui-table-header {
+  background-color: var(--sage-table-head) !important;
+  border-bottom-color: var(--sage-border) !important;
+}
+.layui-table thead tr {
+  background-color: var(--sage-table-head) !important;
+}
+.layui-table th {
+  font-weight: 600 !important;
+  color: var(--sage-text) !important;
+  font-size: 12.5px !important;
+}
+.layui-table td, .layui-table th {
+  border-color: var(--sage-border-light) !important;
+  font-size: 12.5px !important;
+}
+.layui-table-cell {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+}
+.layui-table-hover, .layui-table tbody tr:hover {
+  background-color: var(--sage-primary-soft) !important;
+}
+.layui-table tbody tr.sage-row-selected {
+  background-color: var(--sage-primary-active) !important;
+}
+.layui-table-page {
+  background-color: var(--sage-table-foot) !important;
+  border-top: 1px solid var(--sage-border) !important;
+  padding: 6px 12px !important;
+  height: 40px !important;
+}
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+  background-color: var(--sage-primary) !important;
+  border-radius: 4px;
+}
+.layui-laypage a:hover {
+  color: var(--sage-primary) !important;
+}
+
+/* 4. 现代软色状态胶囊徽章 */
+.sage-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 1px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.sage-badge::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.sage-badge-primary { background: var(--sage-primary-soft); color: var(--sage-primary); }
+.sage-badge-teal  { background: #f0fdfa; color: #0f766e; }
+.sage-badge-green { background: #ecfdf5; color: #059669; }
+.sage-badge-amber { background: #fffbeb; color: #d97706; }
+.sage-badge-blue  { background: #eff6ff; color: #2563eb; }
+.sage-badge-red   { background: #fef2f2; color: #dc2626; }
+.sage-badge-gray  { background: #f1f5f9; color: #475569; }
+
+/* 5. 行内文字操作链接 */
+.sage-op {
+  color: var(--sage-primary);
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
+.sage-op:hover { text-decoration: underline; }
+.sage-op-danger { color: #dc2626; }
+.sage-op-sep { color: #cbd5e1; margin: 0 5px; }
+
+/* 6. 重设计 Layer 居中弹窗 (skin: 'sage-modal') */
+body .sage-modal.layui-layer {
+  border-radius: 10px !important;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.2) !important;
+  border: 1px solid var(--sage-border);
+}
+body .sage-modal .layui-layer-title {
+  background: #ffffff !important;
+  color: var(--sage-text) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  height: 46px !important;
+  line-height: 46px !important;
+  border-bottom: 1px solid var(--sage-border) !important;
+  padding: 0 42px 0 18px !important;
+}
+body .sage-modal .layui-layer-setwin {
+  top: 15px !important;
+  right: 16px !important;
+}
+body .sage-modal .layui-layer-btn {
+  background: var(--sage-table-foot) !important;
+  border-top: 1px solid var(--sage-border) !important;
+  padding: 10px 18px !important;
+}
+body .sage-modal .layui-layer-btn a {
+  height: 30px !important;
+  line-height: 28px !important;
+  border-radius: 5px !important;
+  font-size: 12.5px !important;
+}
+body .sage-modal .layui-layer-btn .layui-layer-btn0 {
+  background-color: var(--sage-primary) !important;
+  border-color: var(--sage-primary) !important;
+}
+
+/* 7. 重设计 Layer 右侧抽屉 (skin: 'sage-drawer') */
+body .sage-drawer.layui-layer {
+  border-radius: 0 !important;
+  box-shadow: -8px 0 28px rgba(15, 23, 42, 0.14) !important;
+  border-left: 1px solid var(--sage-border);
+}
+body .sage-drawer .layui-layer-title {
+  background: #ffffff !important;
+  color: var(--sage-text) !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  border-bottom: 1px solid var(--sage-border) !important;
+  padding: 0 44px 0 20px !important;
+}
+body .sage-drawer .layui-layer-setwin {
+  top: 17px !important;
+  right: 18px !important;
+}
+
+/* 弹窗/抽屉内表单通用样式 */
+.sage-form-box {
+  padding: 16px 20px 72px;
+  background: #ffffff;
+  min-height: 100%;
+}
+.sage-form-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 52px;
+  padding: 0 20px;
+  background: var(--sage-table-foot);
+  border-top: 1px solid var(--sage-border);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  z-index: 10;
+}
+.sage-form-tip {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: var(--sage-primary-soft);
+  border: 1px solid var(--sage-primary-active);
+  color: var(--sage-primary);
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+.sage-field { margin-bottom: 14px; }
+.sage-field-label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 5px;
+}
+.sage-field-label .req { color: #dc2626; margin-left: 2px; }
+.sage-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
